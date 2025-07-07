@@ -1,6 +1,5 @@
-const express = require("express");
-const path = require("path");
-const formRoutes = require("./routes/form");
+import express from "express";
+import formRoutes from "./routes/form.js";
 
 const app = express();
 
@@ -13,4 +12,4 @@ app.listen(3000, () => {
 
 app.use("/", formRoutes);
 
-module.exports = app;
+export default app;

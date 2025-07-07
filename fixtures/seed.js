@@ -1,4 +1,4 @@
-const pool = require("../src/db");
+import pool from "../src/db";
 
 async function seed() {
   await pool.query(`
